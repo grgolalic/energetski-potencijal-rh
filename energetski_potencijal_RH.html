@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8c024cf63ab83b46883b56e5a8be7baf {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8c024cf63ab83b46883b56e5a8be7baf" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8c024cf63ab83b46883b56e5a8be7baf = L.map(
+                "map_8c024cf63ab83b46883b56e5a8be7baf",
+                {
+                    center: [44.5, 16.5],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 7,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0c701ae0cdc7fd3db7be7de5425eaf40 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_0c701ae0cdc7fd3db7be7de5425eaf40.addTo(map_8c024cf63ab83b46883b56e5a8be7baf);
+        
+    
+            var circle_marker_0e4bacf9e682e906a4efc18a2a9f390f = L.circleMarker(
+                [42.65, 18.1],
+                {"bubblingMouseEvents": true, "color": "#2ecc71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_8c024cf63ab83b46883b56e5a8be7baf);
+        
+    
+        var popup_6500efb2d5df7fa180d1ae5a874df7d1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4328cf2b139b1102a8d07021121873a1 = $(`<div id="html_4328cf2b139b1102a8d07021121873a1" style="width: 100.0%; height: 100.0%;">     <div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; size: 14px;">         <h4 style="color: #2c3e50; margin-bottom: 5px;">Dubrovnik</h4>         <table style="width: 100%; border-collapse: collapse;">             <tr><td><b>Sunčani sati:</b></td><td>2641 h</td></tr>             <tr><td><b>Vjetar:</b></td><td>5.4 m/s</td></tr>             <tr style="color: #27ae60;"><td><b>Ušteda CO2:</b></td><td><b>891298.76 kg</b></td></tr>         </table>     </div>     </div>`)[0];
+                popup_6500efb2d5df7fa180d1ae5a874df7d1.setContent(html_4328cf2b139b1102a8d07021121873a1);
+            
+        
+
+        circle_marker_0e4bacf9e682e906a4efc18a2a9f390f.bindPopup(popup_6500efb2d5df7fa180d1ae5a874df7d1)
+        ;
+
+        
+    
+    
+            var circle_marker_a2ba5582114d29cb232167dd81b4f25f = L.circleMarker(
+                [45.9, 16.84],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_8c024cf63ab83b46883b56e5a8be7baf);
+        
+    
+        var popup_49ccec27e17f6188a762e5a9dccf7799 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f836e706160185713c89381cdb8f7bb8 = $(`<div id="html_f836e706160185713c89381cdb8f7bb8" style="width: 100.0%; height: 100.0%;">     <div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; size: 14px;">         <h4 style="color: #2c3e50; margin-bottom: 5px;">Bjelovar</h4>         <table style="width: 100%; border-collapse: collapse;">             <tr><td><b>Sunčani sati:</b></td><td>1966 h</td></tr>             <tr><td><b>Vjetar:</b></td><td>2.4 m/s</td></tr>             <tr style="color: #27ae60;"><td><b>Ušteda CO2:</b></td><td><b>39.39 kg</b></td></tr>         </table>     </div>     </div>`)[0];
+                popup_49ccec27e17f6188a762e5a9dccf7799.setContent(html_f836e706160185713c89381cdb8f7bb8);
+            
+        
+
+        circle_marker_a2ba5582114d29cb232167dd81b4f25f.bindPopup(popup_49ccec27e17f6188a762e5a9dccf7799)
+        ;
+
+        
+    
+    
+            var circle_marker_b6f07558656689f394f298e10a16acbd = L.circleMarker(
+                [44.54, 15.37],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_8c024cf63ab83b46883b56e5a8be7baf);
+        
+    
+        var popup_8bf4ed66d48524821359bc16763a14b5 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d61db4eb8cc60e5fded3a0a05fb622f8 = $(`<div id="html_d61db4eb8cc60e5fded3a0a05fb622f8" style="width: 100.0%; height: 100.0%;">     <div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; size: 14px;">         <h4 style="color: #2c3e50; margin-bottom: 5px;">Gospic</h4>         <table style="width: 100%; border-collapse: collapse;">             <tr><td><b>Sunčani sati:</b></td><td>2027 h</td></tr>             <tr><td><b>Vjetar:</b></td><td>4.1 m/s</td></tr>             <tr style="color: #27ae60;"><td><b>Ušteda CO2:</b></td><td><b>503904.68 kg</b></td></tr>         </table>     </div>     </div>`)[0];
+                popup_8bf4ed66d48524821359bc16763a14b5.setContent(html_d61db4eb8cc60e5fded3a0a05fb622f8);
+            
+        
+
+        circle_marker_b6f07558656689f394f298e10a16acbd.bindPopup(popup_8bf4ed66d48524821359bc16763a14b5)
+        ;
+
+        
+    
+    
+            var circle_marker_c6173a3557a4c5d93f5f9b55cc6d6be5 = L.circleMarker(
+                [44.86, 13.84],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_8c024cf63ab83b46883b56e5a8be7baf);
+        
+    
+        var popup_92ce28737863325104d7bc1be41fde4d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6bf0d0335f0190234e26daf54cd8c729 = $(`<div id="html_6bf0d0335f0190234e26daf54cd8c729" style="width: 100.0%; height: 100.0%;">     <div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; size: 14px;">         <h4 style="color: #2c3e50; margin-bottom: 5px;">Pula</h4>         <table style="width: 100%; border-collapse: collapse;">             <tr><td><b>Sunčani sati:</b></td><td>2400 h</td></tr>             <tr><td><b>Vjetar:</b></td><td>4.2 m/s</td></tr>             <tr style="color: #27ae60;"><td><b>Ušteda CO2:</b></td><td><b>534758.01 kg</b></td></tr>         </table>     </div>     </div>`)[0];
+                popup_92ce28737863325104d7bc1be41fde4d.setContent(html_6bf0d0335f0190234e26daf54cd8c729);
+            
+        
+
+        circle_marker_c6173a3557a4c5d93f5f9b55cc6d6be5.bindPopup(popup_92ce28737863325104d7bc1be41fde4d)
+        ;
+
+        
+    
+    
+            var circle_marker_aca1adf39b36ca5fe7aff28f86f8e3a6 = L.circleMarker(
+                [45.55, 18.67],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_8c024cf63ab83b46883b56e5a8be7baf);
+        
+    
+        var popup_e7bcd7e482e5c72d3cebfe3252ef53f1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b2b8e95771792626ac765f298c3c45d3 = $(`<div id="html_b2b8e95771792626ac765f298c3c45d3" style="width: 100.0%; height: 100.0%;">     <div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; size: 14px;">         <h4 style="color: #2c3e50; margin-bottom: 5px;">Osijek</h4>         <table style="width: 100%; border-collapse: collapse;">             <tr><td><b>Sunčani sati:</b></td><td>1982 h</td></tr>             <tr><td><b>Vjetar:</b></td><td>3.2 m/s</td></tr>             <tr style="color: #27ae60;"><td><b>Ušteda CO2:</b></td><td><b>237116.55 kg</b></td></tr>         </table>     </div>     </div>`)[0];
+                popup_e7bcd7e482e5c72d3cebfe3252ef53f1.setContent(html_b2b8e95771792626ac765f298c3c45d3);
+            
+        
+
+        circle_marker_aca1adf39b36ca5fe7aff28f86f8e3a6.bindPopup(popup_e7bcd7e482e5c72d3cebfe3252ef53f1)
+        ;
+
+        
+    
+    
+            var circle_marker_6019d756f674184fe9c4a66d939a18cf = L.circleMarker(
+                [45.33, 14.44],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_8c024cf63ab83b46883b56e5a8be7baf);
+        
+    
+        var popup_4004cbab850ef70a730e439acebb064e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e2144282d28a66d9ed2e2443f27c84c5 = $(`<div id="html_e2144282d28a66d9ed2e2443f27c84c5" style="width: 100.0%; height: 100.0%;">     <div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; size: 14px;">         <h4 style="color: #2c3e50; margin-bottom: 5px;">Rijeka</h4>         <table style="width: 100%; border-collapse: collapse;">             <tr><td><b>Sunčani sati:</b></td><td>2218 h</td></tr>             <tr><td><b>Vjetar:</b></td><td>5.0 m/s</td></tr>             <tr style="color: #27ae60;"><td><b>Ušteda CO2:</b></td><td><b>771150.44 kg</b></td></tr>         </table>     </div>     </div>`)[0];
+                popup_4004cbab850ef70a730e439acebb064e.setContent(html_e2144282d28a66d9ed2e2443f27c84c5);
+            
+        
+
+        circle_marker_6019d756f674184fe9c4a66d939a18cf.bindPopup(popup_4004cbab850ef70a730e439acebb064e)
+        ;
+
+        
+    
+    
+            var circle_marker_0ba1c25defd2d7673cdfd5090626c0f2 = L.circleMarker(
+                [43.51, 16.44],
+                {"bubblingMouseEvents": true, "color": "#2ecc71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_8c024cf63ab83b46883b56e5a8be7baf);
+        
+    
+        var popup_566c2765ee64b573d6b1d2ad8ed6d822 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_85ddd7cd6b03ec522f637df83eebb2df = $(`<div id="html_85ddd7cd6b03ec522f637df83eebb2df" style="width: 100.0%; height: 100.0%;">     <div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; size: 14px;">         <h4 style="color: #2c3e50; margin-bottom: 5px;">Split_marjan</h4>         <table style="width: 100%; border-collapse: collapse;">             <tr><td><b>Sunčani sati:</b></td><td>2645 h</td></tr>             <tr><td><b>Vjetar:</b></td><td>5.4 m/s</td></tr>             <tr style="color: #27ae60;"><td><b>Ušteda CO2:</b></td><td><b>891315.57 kg</b></td></tr>         </table>     </div>     </div>`)[0];
+                popup_566c2765ee64b573d6b1d2ad8ed6d822.setContent(html_85ddd7cd6b03ec522f637df83eebb2df);
+            
+        
+
+        circle_marker_0ba1c25defd2d7673cdfd5090626c0f2.bindPopup(popup_566c2765ee64b573d6b1d2ad8ed6d822)
+        ;
+
+        
+    
+    
+            var circle_marker_b5e7f1b32fa5c085ea2bdda3e82afb90 = L.circleMarker(
+                [43.04, 16.08],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_8c024cf63ab83b46883b56e5a8be7baf);
+        
+    
+        var popup_60f9e90403ab68e1c79a63ae9d946c85 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_557b0b90d610e85da40dbde791f6b412 = $(`<div id="html_557b0b90d610e85da40dbde791f6b412" style="width: 100.0%; height: 100.0%;">     <div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; size: 14px;">         <h4 style="color: #2c3e50; margin-bottom: 5px;">Komiza</h4>         <table style="width: 100%; border-collapse: collapse;">             <tr><td><b>Sunčani sati:</b></td><td>2400 h</td></tr>             <tr><td><b>Vjetar:</b></td><td>5.8 m/s</td></tr>             <tr style="color: #27ae60;"><td><b>Ušteda CO2:</b></td><td><b>1008828.59 kg</b></td></tr>         </table>     </div>     </div>`)[0];
+                popup_60f9e90403ab68e1c79a63ae9d946c85.setContent(html_557b0b90d610e85da40dbde791f6b412);
+            
+        
+
+        circle_marker_b5e7f1b32fa5c085ea2bdda3e82afb90.bindPopup(popup_60f9e90403ab68e1c79a63ae9d946c85)
+        ;
+
+        
+    
+    
+            var circle_marker_654db8faca54b013712588426854dbf9 = L.circleMarker(
+                [44.12, 15.23],
+                {"bubblingMouseEvents": true, "color": "#2ecc71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_8c024cf63ab83b46883b56e5a8be7baf);
+        
+    
+        var popup_980429a382cc17b63998d716e8286e14 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_71e6bbfd8149bca8f80198f5b8c6b272 = $(`<div id="html_71e6bbfd8149bca8f80198f5b8c6b272" style="width: 100.0%; height: 100.0%;">     <div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; size: 14px;">         <h4 style="color: #2c3e50; margin-bottom: 5px;">Zadar</h4>         <table style="width: 100%; border-collapse: collapse;">             <tr><td><b>Sunčani sati:</b></td><td>2591 h</td></tr>             <tr><td><b>Vjetar:</b></td><td>4.8 m/s</td></tr>             <tr style="color: #27ae60;"><td><b>Ušteda CO2:</b></td><td><b>713303.82 kg</b></td></tr>         </table>     </div>     </div>`)[0];
+                popup_980429a382cc17b63998d716e8286e14.setContent(html_71e6bbfd8149bca8f80198f5b8c6b272);
+            
+        
+
+        circle_marker_654db8faca54b013712588426854dbf9.bindPopup(popup_980429a382cc17b63998d716e8286e14)
+        ;
+
+        
+    
+    
+            var circle_marker_0f6e5f0d10feaae06f7c6a47c4ede1fe = L.circleMarker(
+                [45.81, 15.98],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_8c024cf63ab83b46883b56e5a8be7baf);
+        
+    
+        var popup_7e66a94b27eac93c2d0dee0bed2b2e70 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2ce318bf72dbd2abc69206148ae3ad7f = $(`<div id="html_2ce318bf72dbd2abc69206148ae3ad7f" style="width: 100.0%; height: 100.0%;">     <div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; size: 14px;">         <h4 style="color: #2c3e50; margin-bottom: 5px;">Zagreb_maksimir</h4>         <table style="width: 100%; border-collapse: collapse;">             <tr><td><b>Sunčani sati:</b></td><td>1951 h</td></tr>             <tr><td><b>Vjetar:</b></td><td>2.7 m/s</td></tr>             <tr style="color: #27ae60;"><td><b>Ušteda CO2:</b></td><td><b>88888.24 kg</b></td></tr>         </table>     </div>     </div>`)[0];
+                popup_7e66a94b27eac93c2d0dee0bed2b2e70.setContent(html_2ce318bf72dbd2abc69206148ae3ad7f);
+            
+        
+
+        circle_marker_0f6e5f0d10feaae06f7c6a47c4ede1fe.bindPopup(popup_7e66a94b27eac93c2d0dee0bed2b2e70)
+        ;
+
+        
+    
+</script>
+</html>
